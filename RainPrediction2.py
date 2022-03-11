@@ -6,9 +6,8 @@ from sklearn import preprocessing
 import scipy.stats as stats
 from sklearn.model_selection import train_test_split
 from collections import Counter
-from imblearn import under_sampling, over_sampling
 from imblearn.over_sampling import SMOTE
-from sklearn.metrics import accuracy_score,confusion_matrix,classification_report,cohen_kappa_score
+from sklearn.metrics import accuracy_score,confusion_matrix,classification_report
 from sklearn import metrics
 from sklearn.ensemble import RandomForestClassifier
 from catboost import CatBoostClassifier

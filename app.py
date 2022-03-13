@@ -5,7 +5,7 @@ import numpy as np
 import datetime
 import pickle
 app = Flask(__name__)
-model = pickle.load(open("C:/Users/Ashish/Desktop/Rainfall Prediction/cat.pkl", "rb"))
+model = pickle.load(open("cat.pkl", "rb"))
 print("Model Loaded")
 
 @app.route("/",methods=['GET'])#GET is 'BY DEFAULT', we probably don't need to use it

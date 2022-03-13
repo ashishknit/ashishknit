@@ -17,7 +17,7 @@ from sklearn.linear_model import LogisticRegression
 from sklearn.naive_bayes import GaussianNB
 from sklearn.neighbors import KNeighborsClassifier
 import joblib
-df = pd.read_csv("C:/Users/Ashish/Desktop/Rainfall Prediction/weatherAUS.csv")
+df = pd.read_csv("weatherAUS.csv")
 pd.set_option("display.max_columns", None)#pd.set_option('max_colwidth', 800) sets max.width to 800 pixels per column. So we use 'None'
 numerical_feature = [feature for feature in df.columns if df[feature].dtypes != 'O']#Datatype='O' (if 'Object'), 'f' (if 'Float')
 #print("Numerical Features Count {}".format(len(numerical_feature)))
@@ -268,4 +268,4 @@ plt.show()#Note that hyperparameter tuning not done here
 # #print(metrics.roc_auc_score(y_test, y_pred5, average=None))
 # #we chose “Cohen’s Kappa” as a metric to decide on the best model, especially in case of unbalanced datasets
 # #Now, we use joblib to create pickle file; in comparison to 'pickle', 'joblib' is faster(creates pickle file in ONE step)
-joblib.dump(cat, "C:/Users/Ashish/Desktop/Rainfall Prediction/cat.pkl")
+#joblib.dump(cat, "C:/Users/Ashish/Desktop/Rainfall Prediction/cat.pkl")

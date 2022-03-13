@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rainy Brain</title>
+    <link rel="stylesheet" href={{url_for('static',filename='style1.css')}}>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
+
+  </head>
+  <body>
+
+    <section>
+      <input type="checkbox" id="check">
+      <header>
+        </div>
+        <h2><a href="#" class="logo">Rainy Brain</a></h2>
+        <div class="navigation">
+          <a href="#">Home</a>
+          <a href="#about">About Rainy Brain</a>
+          <a href="#dashboard">Dashboard</a>
+          <a href="#info">Developer</a>
+          <a href="/predict">Predictor</a>
+        </div>
+        <label for="check">
+        <i class="fas fa-bars menu-btn"></i>
+        <i class="fas fa-times close-btn"></i>
+        </label>
+      </header>
+      <div class="content" style="margin-top: 8%;">
+        <div class="info">
+          <h2>Plant Trees <br><span>Save Rain</span></h2>
+          <p> "Plant trees to bring the rains and get rid of the summer's heat.” - Trees help reduce and moderate the temperature and climate, which is why it is so important that we have more of them</p>
+          <a href="#about" class="info-btn">More info</a>
+        </div>
+      </div>
+
+    </section>
+
+    <section id="about">
+      <h2>About Rainy Brain</h2>
+      <p class="about-content" style="text-align: center;">Rainy Brain is a web app which has
+      a Machine Learning model running at the back. The purpose of developing this app is to
+      predict whether it will rain the next day or not. This model is based on the Rain Prediction
+      in Australia dataset.
+      </p>
+    </section>
+
+    <section id="dashboard">
+      <h2>Dashboard</h2>
+      <p>This dashboard is done using a software called PowerBI which is a product of Microsoft.
+        Here I have just attached the images of the dashboard because PowerBI needs oraganizational
+        account. </p>
+      <img class="dashboard-image" src="../static/dashboard.png" alt="1">
+
+    </section>
+
+    <section id="info">
+      <div>
+        <img src="../static/ashish.jpg" alt="Ashish">
+      </div>
+
+      <div>
+        <h2>Developer</h2>
+        <p class="about-content"> Hi, I'm Ashish Srivastava: a Mechanical Engineer by training, a Civil Engineer by profession and a Data Science Enthusiast. Currently, I am working as Deputy Director under Ministry of Power, Government of India.</p>
+
+      </div>
+    </section>
+
+    <footer>
+      <p>
+        Developed with ❤️ by Ashish Srivastava
+      </p>
+
+    </footer>
+
+  </body>
+</html>
